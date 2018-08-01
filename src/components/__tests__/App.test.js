@@ -1,11 +1,9 @@
 import React from 'react';
-import Enzyme, { shallow } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-16';
-import App from '../App';
-import CommentBox from '../CommentBox';
-import CommentList from '../CommentList';
-
-Enzyme.configure({ adapter: new Adapter() });
+import { shallow } from 'enzyme';
+import 'components/setupTests';
+import App from 'components/App';
+import CommentBox from 'components/CommentBox';
+import CommentList from 'components/CommentList';
 
 // Context
 const wrappedComponent = shallow(<App />);
